@@ -1,0 +1,50 @@
+@import "../utils/vars";
+.portfolio-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+  position: relative;
+  &__text {
+    width: 301px;
+    height: 196px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $main-white-color;
+  }
+  &__description {
+    padding: 20px 24px;
+    border: 1px solid $portfolio-border-color;
+    border-top: none;
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+  &__paragraph {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $gray-text-color;
+    margin-top: 4px;
+  }
+  &__list-item {
+    max-width: 370px;
+    transition-property: box-shadow;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+  }
+  &__list-item--focus:focus,
+  &__list-item--hover:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+  &__list-item--focus:focus .portfolio-overlay-box,
+  &__list-item--hover:hover .portfolio-overlay-box {
+    transform: translatey(0);
+  }
+}

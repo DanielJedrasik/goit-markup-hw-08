@@ -1,0 +1,16 @@
+@import "../utils/vars";
+.hidden-overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 370px;
+  height: 294px;
+}
+.portfolio-overlay-box {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translatey(101%);
+  transition: transform 250ms;
+  padding: 49px 45px 49px 24px;
+}

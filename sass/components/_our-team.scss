@@ -1,0 +1,75 @@
+@import "../utils/vars";
+
+.our-team {
+  background-color: $team-section-color;
+  &__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__second-header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  &__paragraph {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $gray-text-color;
+  }
+  .our-team-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 16px;
+    &__item {
+      background-color: $main-white-color;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      box-shadow: none;
+      border-radius: 50%;
+    }
+    &__svg {
+      width: 22px;
+      height: 22px;
+    }
+    &__link {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      color: $main-white-color;
+      fill: $icon-socialmedia-color;
+      transition-property: fill, color;
+      transition-duration: $duration;
+      transition-timing-function: $timing-function;
+    }
+    &__link--focus:focus,
+    &__link--hover:hover {
+      background-color: $blue-color;
+      fill: currentColor;
+    }
+    &__item-position {
+      background-color: $main-white-color;
+    }
+  }
+  .our-team-text-position {
+    padding-block: 30px;
+  }
+}

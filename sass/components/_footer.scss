@@ -1,0 +1,141 @@
+@import "../utils/vars";
+
+.website-footer {
+  background-color: $gray-background-color;
+  padding-block: 60px;
+  .website-position {
+    display: flex;
+    align-items: baseline;
+  }
+  &__link {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $main-white-color;
+    transition-property: color;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+  }
+  &__link--hover:hover,
+  &__link--focus:focus {
+    color: $blue-color;
+  }
+  .footer-contacts {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    margin-top: 20px;
+    &__address {
+      color: $main-white-color;
+      transition-property: color;
+      transition-duration: $duration;
+      transition-timing-function: $timing-function;
+    }
+    &__mail,
+    &__number {
+      margin-top: 9px;
+      color: $footer-text-color;
+      transition-property: color;
+      transition-duration: $duration;
+      transition-timing-function: $timing-function;
+    }
+    &__link--hover:hover,
+    &__link--focus:focus {
+      color: $blue-color;
+    }
+  }
+  .footer-socialmedia {
+    margin-left: 70px;
+
+    &__paragraph {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $main-white-color;
+    }
+    &__svg {
+      width: 20px;
+      height: 20px;
+      fill: $main-white-color;
+      transition-property: fill;
+      transition-duration: $duration;
+      transition-timing-function: $timing-function;
+    }
+    &__list {
+      margin-top: 20px;
+      gap: 10px;
+      display: flex;
+    }
+    &__list-item {
+      width: 44px;
+      height: 44px;
+      background: $footer-background;
+      padding: 12px;
+      border-radius: 50%;
+      align-items: center;
+      transition-property: background-color;
+      transition-duration: $duration;
+      transition-timing-function: $timing-function;
+    }
+    &__list-item--hover:hover,
+    &__list-item--focus:focus {
+      background-color: $blue-color;
+      cursor: pointer;
+    }
+  }
+  .footer-newsletter {
+    margin-left: 78px;
+    &__svg {
+      width: 24px;
+      height: 24px;
+      margin-left: 24px;
+    }
+    &__label {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $main-white-color;
+      margin-bottom: 20px;
+      display: block;
+    }
+    &__input {
+      width: 358px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background-color: inherit;
+      padding-left: 16px;
+      font-size: 16px;
+      line-height: 1.25px;
+      letter-spacing: 0.03em;
+      color: $footer-text-color;
+    }
+    &__btn {
+      width: 200px;
+      height: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.06em;
+      color: $main-white-color;
+      background: $blue-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__position {
+      display: flex;
+      gap: 12px;
+    }
+  }
+}
