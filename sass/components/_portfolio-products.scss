@@ -1,6 +1,5 @@
 @import "../utils/vars";
 .portfolio-products {
-  display: none;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -33,7 +32,14 @@
     margin-top: 4px;
   }
   &__list-item {
-    max-width: 370px;
+    max-width: 450px;
+
+    @include tablet {
+      max-width: 354px;
+    }
+    @include desktop {
+      max-width: 370px;
+    }
     transition-property: box-shadow;
     transition-duration: $duration;
     transition-timing-function: $timing-function;

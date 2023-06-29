@@ -1,14 +1,25 @@
 @import "../utils/vars";
 .hidden-overlay {
-  display: none;
   position: absolute;
   overflow: hidden;
-  width: 370px;
+  max-width: 450px;
   height: 294px;
+  @include desktop {
+    max-width: 354px;
+  }
+  @include desktop {
+    max-width: 370px;
+  }
 }
 .portfolio-overlay-box {
   position: absolute;
-  width: 370px;
+  max-width: 450px;
+  @include desktop {
+    max-width: 354px;
+  }
+  @include desktop {
+    max-width: 370px;
+  }
   height: 294px;
   background: rgba(33, 150, 243, 0.9);
   transform: translatey(101%);

@@ -1,9 +1,12 @@
 @import "../utils/vars";
 
 .filter-buttons {
-  display: none;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  @include desktop {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
   gap: 8px;
   &__btn {
     font-family: "Roboto";

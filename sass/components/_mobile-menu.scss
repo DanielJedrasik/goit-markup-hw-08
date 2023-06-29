@@ -45,6 +45,9 @@
       line-height: normal;
       letter-spacing: 0.8px;
     }
+    &__current {
+      color: $blue-color;
+    }
   }
   .mobile-contacts {
     display: flex;

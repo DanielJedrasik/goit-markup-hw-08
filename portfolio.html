@@ -28,6 +28,16 @@
           class="header-navigation__link header-navigation__link--focus header-navigation__link--hover"
           ><span class="header-navigation__text">Web</span>Studio</a
         >
+        <button
+          type="button"
+          class="header-navigation__btn header-navigation__btn--focus js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toogle__svg" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_mobile"></use>
+          </svg>
+        </button>
         <nav class="website-navigation">
           <ul class="website-navigation__list">
             <li>
@@ -138,12 +148,33 @@
                   </p>
                 </div>
               </div>
-              <img
-                src="./images/portfolio1.jpg"
-                alt="website in notebook"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <img
+                  src="./images/portfolio1mobile@1x.jpg"
+                  alt="website in notebook"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio1mobile@1x.jpg 1x,
+                    ./images/portfolio1mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio1tablet@1x.jpg 1x,
+                    ./images/portfolio1tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio1desktop@1x.jpg 1x,
+                    ./images/portfolio1desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <div class="portfolio-products__description">
                 <h3 class="portfolio-products__header">Technocrack</h3>
                 <p class="portfolio-products__paragraph">Strona internetowa</p>
@@ -162,12 +193,33 @@
                   </p>
                 </div>
               </div>
-              <img
-                src="./images/portfolio2.jpg"
-                alt="basketball players"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <img
+                  src="./images/portfolio2mobile@1x.jpg"
+                  alt="basketball players"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio2mobile@1x.jpg 1x,
+                    ./images/portfolio2mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio2tablet@1x.jpg 1x,
+                    ./images/portfolio2tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio2desktop@1x.jpg 1x,
+                    ./images/portfolio2desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <div class="portfolio-products__description">
                 <h3 class="portfolio-products__header">
                   Grafika New Orlean vs Golden Star
@@ -188,12 +240,33 @@
                   </p>
                 </div>
               </div>
-              <img
-                src="./images/portfolio3.jpg"
-                alt="restaurant's logo with fish"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <img
+                  src="./images/portfolio3mobile@1x.jpg"
+                  alt="restaurant's logo with fish"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio3mobile@1x.jpg 1x,
+                    ./images/portfolio3mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio3tablet@1x.jpg 1x,
+                    ./images/portfolio3tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio3desktop@1x.jpg 1x,
+                    ./images/portfolio3desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <div class="portfolio-products__description">
                 <h3 class="portfolio-products__header">Restauracja Seafood</h3>
                 <p class="portfolio-products__paragraph">Aplikacja</p>
@@ -212,12 +285,33 @@
                   </p>
                 </div>
               </div>
-              <img
-                src="./images/portfolio4.jpg"
-                alt="black headphone"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <img
+                  src="./images/portfolio4mobile@1x.jpg"
+                  alt="black headphone"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio4mobile@1x.jpg 1x,
+                    ./images/portfolio4mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio4tablet@1x.jpg 1x,
+                    ./images/portfolio4tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio4desktop@1x.jpg 1x,
+                    ./images/portfolio4desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <div class="portfolio-products__description">
                 <h3 class="portfolio-products__header">Projekt Prime</h3>
                 <p class="portfolio-products__paragraph">Marketing</p>
@@ -236,12 +330,33 @@
                   </p>
                 </div>
               </div>
-              <img
-                src="./images/portfolio5.jpg"
-                alt="brown and whie boxes"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <img
+                  src="./images/portfolio5mobile@1x.jpg"
+                  alt="brown and whie boxes"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio5mobile@1x.jpg 1x,
+                    ./images/portfolio5mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio5tablet@1x.jpg 1x,
+                    ./images/portfolio5tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio5desktop@1x.jpg 1x,
+                    ./images/portfolio5desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <div class="portfolio-products__description">
                 <h3 class="portfolio-products__header">Projekt Boxes</h3>
                 <p class="portfolio-products__paragraph">Aplikacja</p>
@@ -260,12 +375,33 @@
                   </p>
                 </div>
               </div>
-              <img
-                src="./images/portfolio6.jpg"
-                alt="dark themed website on screen"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <img
+                  src="./images/portfolio6mobile@1x.jpg"
+                  alt="dark themed website on screen"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio6mobile@1x.jpg 1x,
+                    ./images/portfolio6mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio6tablet@1x.jpg 1x,
+                    ./images/portfolio6tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio6desktop@1x.jpg 1x,
+                    ./images/portfolio6desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <div class="portfolio-products__description">
                 <h3 class="portfolio-products__header">
                   Inspiration has no Borders
@@ -286,12 +422,30 @@
                   </p>
                 </div>
               </div>
-              <img
-                src="./images/portfolio7.jpg"
-                alt="opened book"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <img src="./images/portfolio7mobile@1x.jpg" alt="opened book" />
+                <source
+                  srcset="
+                    ./images/portfolio7mobile@1x.jpg 1x,
+                    ./images/portfolio7mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio7tablet@1x.jpg 1x,
+                    ./images/portfolio7tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio7desktop@1x.jpg 1x,
+                    ./images/portfolio7desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <div class="portfolio-products__description">
                 <h3 class="portfolio-products__header">
                   Magazyn Limited Edition
@@ -312,12 +466,33 @@
                   </p>
                 </div>
               </div>
-              <img
-                src="./images/portfolio8.jpg"
-                alt="white hanger"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <img
+                  src="./images/portfolio8mobile@1x.jpg"
+                  alt="white hanger"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio8mobile@1x.jpg 1x,
+                    ./images/portfolio8mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio8tablet@1x.jpg 1x,
+                    ./images/portfolio8tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio8desktop@1x.jpg 1x,
+                    ./images/portfolio8desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <div class="portfolio-products__description">
                 <h3 class="portfolio-products__header">Projekt LAB</h3>
                 <p class="portfolio-products__paragraph">Marketing</p>
@@ -336,12 +511,33 @@
                   </p>
                 </div>
               </div>
-              <img
-                src="./images/portfolio9.jpg"
-                alt="hands on notebook keyboard"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <img
+                  alt="hands on notebook keyboard"
+                  src="./images/portfolio9mobile@1x.jpg"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio9mobile@1x.jpg 1x,
+                    ./images/portfolio9mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio9tablet@1x.jpg 1x,
+                    ./images/portfolio9tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio9desktop@1x.jpg 1x,
+                    ./images/portfolio9desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <div class="portfolio-products__description">
                 <h3 class="portfolio-products__header">Growing Business</h3>
                 <p class="portfolio-products__paragraph">Aplikacja</p>
@@ -454,5 +650,54 @@
         </form>
       </div>
     </footer>
+    <div class="mobile-menu container js-menu-container">
+      <button
+        type="button"
+        class="mobile-menu__btn mobile-menu__btn--focus mobile-menu__btn--hover js-close-menu"
+      >
+        <svg class="mobile-menu__svg" width="auto" height="auto">
+          <use href="./images/icons.svg#icon-quit"></use>
+        </svg>
+      </button>
+      <ul class="mobile-navigation">
+        <li>
+          <a href="index.html" class="mobile-navigation__link">Agencja</a>
+        </li>
+        <li>
+          <a
+            href="portfolio.html"
+            class="mobile-navigation__link mobile-navigation__current"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a href="" class="mobile-navigation__link">Kontakt</a>
+        </li>
+      </ul>
+      <div class="mobile-menu__box">
+        <ul class="mobile-contacts">
+          <li>
+            <a href="tel:+48111111111" class="mobile-contacts__phone"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:info@example.com"
+              target="_blank"
+              class="mobile-contacts__mail"
+              >info@example.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-socialmedia">
+          <li><a href="" class="mobile-socialmedia__link">Instagram</a></li>
+          <li><a href="" class="mobile-socialmedia__link">Twitter</a></li>
+          <li><a href="" class="mobile-socialmedia__link">Facebook</a></li>
+          <li><a href="" class="mobile-socialmedia__link">Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
