@@ -149,30 +149,33 @@
                 </div>
               </div>
               <picture>
-                <img
-                  src="./images/portfolio1mobile@1x.jpg"
-                  alt="website in notebook"
-                />
                 <source
                   srcset="
-                    ./images/portfolio1mobile@1x.jpg 1x,
-                    ./images/portfolio1mobile@2x.jpg 2x
+                    images/portfolio1mobile@1x.jpg 1x,
+                    images/portfolio1mobile@2x.jpg 2x
                   "
-                  media="(min-width: 480px)"
+                  media="(max-width: 480px)"
+                  sizes="(max-width: 480px) 480px, 100vw"
                 />
                 <source
                   srcset="
-                    ./images/portfolio1tablet@1x.jpg 1x,
-                    ./images/portfolio1tablet@2x.jpg 2x
+                    images/portfolio1tablet@1x.jpg 1x,
+                    images/portfolio1tablet@2x.jpg 2x
                   "
-                  media="(min-width: 768px)"
+                  media="(min-width: 768px),(max-width: 1199px)"
+                  sizes="(min-width: 768px) 354px, 100vw"
                 />
                 <source
                   srcset="
-                    ./images/portfolio1desktop@1x.jpg 1x,
-                    ./images/portfolio1desktop@2x.jpg 2x
+                    images/portfolio1desktop@1x.jpg 1x,
+                    images/portfolio1desktop@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                />
+                <img
+                  src="images/portfolio1mobile@1x.jpg"
+                  alt="website in notebook"
                 />
               </picture>
               <div class="portfolio-products__description">
