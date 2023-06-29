@@ -3,26 +3,41 @@
 .our-team {
   background-color: $team-section-color;
   &__header {
+    font-size: 28px;
+    font-style: normal;
+    letter-spacing: 0.84px;
     font-weight: 700;
-    font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: 50px;
+    @include desktop {
+      font-size: 36px;
+      letter-spacing: 1.08px;
+    }
   }
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @include desktop {
+      flex-wrap: nowrap;
+    }
   }
   &__second-header {
     font-weight: 500;
     font-size: 16px;
+    font-style: normal;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
   }
   &__paragraph {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -67,6 +82,13 @@
     }
     &__item-position {
       background-color: $main-white-color;
+      max-width: 450px;
+      @include tablet {
+        max-width: 354px;
+      }
+      @include desktop {
+        max-width: 270px;
+      }
     }
   }
   .our-team-text-position {

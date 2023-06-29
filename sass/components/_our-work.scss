@@ -1,6 +1,10 @@
 @import "../utils/vars";
 
 .our-work {
+  display: none;
+  @include desktop {
+    display: flex;
+  }
   &__header {
     font-weight: 700;
     font-size: 36px;

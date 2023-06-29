@@ -28,6 +28,16 @@
           class="header-navigation__link header-navigation__link--focus header-navigation__link--hover"
           ><span class="header-navigation__text">Web</span>Studio</a
         >
+        <button
+          type="button"
+          class="header-navigation__btn header-navigation__btn--focus js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toogle__svg" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_mobile"></use>
+          </svg>
+        </button>
         <nav class="website-navigation">
           <ul class="website-navigation__list">
             <li>
@@ -97,8 +107,8 @@
 
       <section class="informations section">
         <div class="container">
-          <ul class="informations__list">
-            <li>
+          <ul class="informations__list informations-list">
+            <li class="informations-list__item">
               <div class="informations__svg">
                 <svg class="informations__icon-size">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -110,7 +120,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="informations-list__item">
               <div class="informations__svg">
                 <svg class="informations__icon-size">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -122,7 +132,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="informations-list__item">
               <div class="informations__svg">
                 <svg class="informations__icon-size">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -134,7 +144,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="informations-list__item">
               <div class="informations__svg">
                 <svg class="informations__icon-size">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -156,29 +166,28 @@
           <ul class="our-work__list">
             <li>
               <p class="our-work__imgtext">APLIKACJE KOMPUTEROWE</p>
-              <img
-                src="images/img_1.jpg"
-                alt="hands on keyboard"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <img
+                  src="./images/work1@1x.jpg"
+                  srcset="./images/work1@2x.jpg 2x"
+                  alt="hands on keyboard"
+                />
+              </picture>
             </li>
             <li>
               <p class="our-work__imgtext">APLIKACJE MOBILNE</p>
               <img
-                src="images/img_2.jpg"
+                src="./images/work2@1x.jpg"
+                srcset="./images/work2@2x.jpg 2x"
                 alt="smartphone in hands"
-                width="370"
-                height="294"
               />
             </li>
             <li>
               <p class="our-work__imgtext">ROZWIĄZANIA GRAFICZNE</p>
               <img
-                src="images/img_3.jpg"
+                src="./images/work3@1x.jpg"
+                srcset="./images/work3@2x.jpg 2x"
                 alt="creating image on smartphone"
-                width="370"
-                height="294"
               />
             </li>
           </ul>
@@ -190,12 +199,30 @@
           <h2 class="our-team__header">Nasz zespół</h2>
           <ul class="our-team__list">
             <li class="our-team-list__item-position">
-              <img
-                src="images/team_1.jpg"
-                alt="happy man"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <img src="./images/team_1mobile@1x.jpg" alt="happy man" />
+                <source
+                  srcset="
+                    ./images/team_1mobile@1x.jpg 1x,
+                    ./images/team_1mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_1tablet@1x.jpg 1x,
+                    ./images/team_1tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_1desktop@1x.jpg 1x,
+                    ./images/team_1desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <div class="our-team-text-position">
                 <h3 class="our-team__second-header">John Doe</h3>
                 <p class="our-team__paragraph">Product designer</p>
@@ -244,12 +271,30 @@
               </div>
             </li>
             <li class="our-team-list__item-position">
-              <img
-                src="images/team_2.jpg"
-                alt="happy women"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <img src="images/team_2mobile@1x.jpg" alt="happy women" />
+                <source
+                  srcset="
+                    ./images/team_2mobile@1x.jpg 1x,
+                    ./images/team_2mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_2tablet@1x.jpg 1x,
+                    ./images/team_2tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_2desktop@1x.jpg 1x,
+                    ./images/team_2desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <div class="our-team-text-position">
                 <h3 class="our-team__second-header">John Doe</h3>
                 <p class="our-team__paragraph">Frontend Developer</p>
@@ -298,12 +343,30 @@
               </div>
             </li>
             <li class="our-team-list__item-position">
-              <img
-                src="images/team_3.jpg"
-                alt="happy men"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <img src="images/team_3mobile@1x.jpg" alt="happy men" />
+                <source
+                  srcset="
+                    ./images/team_3mobile@1x.jpg 1x,
+                    ./images/team_3mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_3tablet@1x.jpg 1x,
+                    ./images/team_3tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_3desktop@1x.jpg 1x,
+                    ./images/team_3desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <div class="our-team-text-position">
                 <h3 class="our-team__second-header">John Doe</h3>
                 <p class="our-team__paragraph">Marketing</p>
@@ -352,12 +415,30 @@
               </div>
             </li>
             <li class="our-team-list__item-position">
-              <img
-                src="images/team_4.jpg"
-                alt="serious man"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <img src="images/team_4mobile@1x.jpg" alt="serious man" />
+                <source
+                  srcset="
+                    ./images/team_4mobile@1x.jpg 1x,
+                    ./images/team_4mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_4tablet@1x.jpg 1x,
+                    ./images/team_4tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_4desktop@1x.jpg 1x,
+                    ./images/team_4desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <div class="our-team-text-position">
                 <h3 class="our-team__second-header">John Doe</h3>
                 <p class="our-team__paragraph">UI Designer</p>
@@ -578,6 +659,54 @@
         </form>
       </div>
     </footer>
+    <div class="mobile-menu container js-menu-container">
+      <button
+        type="button"
+        class="mobile-menu__btn mobile-menu__btn--focus mobile-menu__btn--hover js-close-menu"
+      >
+        <svg class="mobile-menu__svg" width="auto" height="auto">
+          <use href="./images/icons.svg#icon-quit"></use>
+        </svg>
+      </button>
+      <ul class="mobile-navigation">
+        <li>
+          <a
+            href="index.html"
+            class="mobile-navigation__link mobile-navigation__current"
+            >Agencja</a
+          >
+        </li>
+        <li>
+          <a href="portfolio.html" class="mobile-navigation__link">Portfolio</a>
+        </li>
+        <li>
+          <a href="" class="mobile-navigation__link">Kontakt</a>
+        </li>
+      </ul>
+      <div class="mobile-menu__box">
+        <ul class="mobile-contacts">
+          <li>
+            <a href="tel:+48111111111" class="mobile-contacts__phone"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:info@example.com"
+              target="_blank"
+              class="mobile-contacts__mail"
+              >info@example.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-socialmedia">
+          <li><a href="" class="mobile-socialmedia__link">Instagram</a></li>
+          <li><a href="" class="mobile-socialmedia__link">Twitter</a></li>
+          <li><a href="" class="mobile-socialmedia__link">Facebook</a></li>
+          <li><a href="" class="mobile-socialmedia__link">Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn" data-modal-close>
@@ -678,5 +807,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

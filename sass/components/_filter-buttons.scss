@@ -1,6 +1,7 @@
 @import "../utils/vars";
 
 .filter-buttons {
+  display: none;
   display: flex;
   justify-content: center;
   gap: 8px;

@@ -3,9 +3,24 @@
 .website-footer {
   background-color: $gray-background-color;
   padding-block: 60px;
+  text-align: center;
+  @include desktop {
+    text-align: start;
+  }
+
   .website-position {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+    @include desktop {
+      align-items: baseline;
+      flex-wrap: nowrap;
+    }
   }
   &__link {
     font-family: "Raleway";
@@ -48,8 +63,16 @@
     }
   }
   .footer-socialmedia {
-    margin-left: 70px;
+    margin-top: 60px;
+    @include tablet {
+      margin-top: 5px;
+      margin-left: 144px;
+    }
 
+    @include desktop {
+      margin-left: 70px;
+      margin-top: 0;
+    }
     &__paragraph {
       font-weight: 700;
       font-size: 14px;
@@ -89,7 +112,10 @@
     }
   }
   .footer-newsletter {
-    margin-left: 78px;
+    margin-top: 60px;
+    @include desktop {
+      margin-left: 78px;
+    }
     &__svg {
       width: 24px;
       height: 24px;
@@ -103,10 +129,14 @@
       text-transform: uppercase;
       color: $main-white-color;
       margin-bottom: 20px;
-      display: block;
+      display: flex;
+      flex-direction: column;
+      @include desktop {
+        display: block;
+      }
     }
     &__input {
-      width: 358px;
+      width: 450px;
       height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -132,10 +162,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin: 0 auto;
     }
     &__position {
       display: flex;
-      gap: 12px;
+      flex-direction: column;
+      gap: 20px;
+      @include desktop {
+        flex-direction: row;
+      }
     }
   }
 }

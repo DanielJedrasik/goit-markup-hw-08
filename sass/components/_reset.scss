@@ -36,14 +36,24 @@ a {
   text-decoration: none;
 }
 .section {
-  padding-block: 94px;
+  padding-block: 60px;
+  @include desktop {
+    padding-block: 94px;
+  }
 }
 .section2 {
   padding-top: 0;
   padding-bottom: 94px;
 }
 .container {
-  width: 1200px;
+  max-width: 480px;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }

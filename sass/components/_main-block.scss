@@ -1,14 +1,57 @@
 @import "../utils/vars";
 
 .main-block {
-  max-width: 1600px;
-  height: 600px;
-  padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/headerbackground.jpg);
+    url(../../images/background-mobile@1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/background-mobile@2x.jpg);
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/background-tablet@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/background-tablet@2x.jpg);
+    }
+  }
+  @include desktop {
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/background-desktop@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/background-desktop@2x.jpg);
+    }
+  }
   background-color: $gray-background-color;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,12 +61,13 @@
 
   &__btn {
     font-family: "Roboto";
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.96px;
     color: $main-white-color;
     background-color: $blue-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -36,15 +80,22 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__header {
-    max-width: 696px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    max-width: 365px;
     text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
     color: $main-white-color;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.62;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
     margin: 0 auto;
+    @include desktop {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+    }
   }
   &__btn--hover:hover,
   &__btn--focus:focus {

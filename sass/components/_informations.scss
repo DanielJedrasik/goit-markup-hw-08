@@ -3,15 +3,29 @@
 .informations {
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @include desktop {
+      flex-wrap: nowrap;
+    }
   }
   &__svg {
     background-color: $team-section-color;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 270px;
+    max-width: 450px;
     height: 120px;
+    @include tablet {
+      max-width: 354px;
+    }
+    @include desktop {
+      max-width: 270px;
+    }
   }
   &__icon-size {
     width: 70px;
@@ -24,6 +38,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-top: 30px;
+    text-align: center;
+    @include tablet {
+      text-align: start;
+    }
   }
   &__paragraph {
     font-size: 14px;
@@ -31,5 +49,16 @@
     letter-spacing: 0.03em;
     color: $gray-text-color;
     margin-top: 10px;
+  }
+  .informations-list {
+    &__item {
+      max-width: 450px;
+      @include tablet {
+        max-width: 354px;
+      }
+      @include desktop {
+        max-width: 270px;
+      }
+    }
   }
 }
