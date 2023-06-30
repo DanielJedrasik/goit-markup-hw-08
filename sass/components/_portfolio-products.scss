@@ -20,9 +20,12 @@
   }
   &__header {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 2;
     letter-spacing: 0.06em;
+    @include desktop {
+      font-size: 18px;
+    }
   }
   &__paragraph {
     font-size: 16px;
@@ -32,7 +35,13 @@
     margin-top: 4px;
   }
   &__list-item {
-    width: 370px;
+    width: 450px;
+    @include tablet {
+      width: 354px;
+    }
+    @include desktop {
+      width: 370px;
+    }
     transition-property: box-shadow;
     transition-duration: $duration;
     transition-timing-function: $timing-function;
