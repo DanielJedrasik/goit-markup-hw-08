@@ -9,10 +9,9 @@
   }
 
   .website-position {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     @include tablet {
+      display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: center;
@@ -70,7 +69,7 @@
     }
 
     @include desktop {
-      margin-left: 70px;
+      margin-left: 60px;
       margin-top: 0;
     }
     &__paragraph {
@@ -93,6 +92,7 @@
       margin-top: 20px;
       gap: 10px;
       display: flex;
+      justify-content: center;
     }
     &__list-item {
       width: 44px;
@@ -136,7 +136,13 @@
       }
     }
     &__input {
-      width: 450px;
+      width: 100%;
+      @include tablet {
+        width: 450px;
+      }
+      @include desktop {
+        width: 358px;
+      }
       height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -147,6 +153,10 @@
       line-height: 1.25px;
       letter-spacing: 0.03em;
       color: $footer-text-color;
+      margin-bottom: 20px;
+      @include desktop {
+        margin-bottom: 0;
+      }
     }
     &__btn {
       width: 200px;
@@ -165,10 +175,9 @@
       margin: 0 auto;
     }
     &__position {
-      display: flex;
-      flex-direction: column;
       gap: 20px;
       @include desktop {
+        display: flex;
         flex-direction: row;
       }
     }
